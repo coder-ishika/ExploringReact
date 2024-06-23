@@ -1,0 +1,125 @@
+/* NewCandidate.css */
+
+/* Container styles */
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40; /* Dark gray text */
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Input field styles */
+input[type='text'],
+input[type='date'],
+input[type='email'],
+input[type='number'],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Label styles */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #495057; /* Dark gray text */
+}
+
+/* Radio button styles */
+.gender-options {
+    display: flex; /* Display items in a row */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 15px;
+}
+
+.gender-options label {
+    margin-right: 20px; /* Space between labels */
+}
+
+.gender-options input[type='radio'] {
+    margin-right: 5px; /* Space between radio buttons and labels */
+}
+
+/* Style for the radio button itself */
+.gender-options input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff; /* Primary blue border */
+    border-radius: 50%; /* Make it circular */
+    outline: none;
+    margin-right: 10px; /* Space between radio buttons */
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.gender-options input[type='radio']:checked {
+    background-color: #007bff; /* Primary blue when checked */
+}
+
+.gender-options input[type='radio']:checked::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white; /* White dot when checked */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Submit button styles */
+button[type='submit'] {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    div {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type='text'],
+    input[type='date'],
+    input[type='email'],
+    input[type='number'],
+    select {
+        font-size: 14px;
+    }
+}
